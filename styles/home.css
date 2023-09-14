@@ -1,0 +1,501 @@
+.header-container{
+    position: fixed;
+    height: 10vh;
+    z-index: 999;
+    width: 100%;
+}
+
+.links{
+    background-color: #b90000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    margin-right: 30px;
+    font-size: 18px;
+    color: white;
+
+}
+
+.buttons li a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.buttons li a:hover{
+    color: #e44a4a;
+}
+
+nav img{
+    margin-left: 15px;
+}
+
+nav ul li button{
+    width: 150px;
+    background-color: white;
+    color: #b90000;
+    border-radius: 999px;
+    border: none;
+    font-size: 18px;
+    height: 40px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+nav ul li button:hover{
+    background-color: #e2e2dd;
+}
+
+.hero{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/hero.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.text-content{
+    color: white;
+    text-align: center;
+
+
+}
+
+.hero .text-content h1{
+    font-size: 5rem;
+    margin-bottom: 15px;
+}
+
+.hero .text-content h3{
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero .text-content button{
+    width: 150px;
+    background-color: #b90000;
+    color:white;
+    border-radius: 999px;
+    border: none;
+    font-size: 18px;
+    height: 40px;
+    transition: 4ms;
+    width: 200px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.hero .text-content button:hover{
+    background-color: white;
+    color:red;
+}
+
+
+#beneficios h2{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+.imgItem{
+    width: 80%;
+    height: auto;
+    text-align: center;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 40px;
+}
+
+.item-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    margin-right: 50px;
+        
+}
+
+.item-text h3{
+    font-size: 15px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    color: #e44a4a;
+    font-weight: 700;
+}
+
+.item-text p{
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.itemPhoto{
+    margin-left: 50px;
+}
+
+.clients{
+    min-height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(255,0,0, 0.4), rgba(255, 255, 255,1));
+}
+
+.text{
+    text-align: left;
+    line-height: 0.1rem;
+}
+
+.clients .text h2{
+    font-size: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.clients .text p{
+    font-size: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 40px 20px 10xp 30px;
+    box-shadow: 2px 2px 6px 2px rgb(0, 0, 0, 0.4);
+    text-align: left;
+    border-radius: 10px;
+}
+.card h3{
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    color: #b90000;
+    font-weight: bolder;
+
+}
+
+.card q::before{
+    content: "“";
+    font-size: 5rem;
+    color: rgb(185, 0, 0, 0.4);
+    position: absolute;
+}
+
+.text-content p{
+    color: #b90000;
+}
+
+.card q{
+    font-size: 0.8rem;
+    line-height: 2rem;
+    margin-left: 1rem;
+    margin-top: 15px;
+}
+
+.containerCards{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    padding: 0px 50px 0px 50px;
+}
+
+
+.right{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-top: 15px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-right: 20px;
+    justify-content: flex-start;
+}
+
+.vertical{
+    width: 300px;
+    height: 400px;
+}
+.horizontal{
+    width: 330px;
+    height: 370px;
+}
+
+.retangular{
+    margin-top: 20px;
+    width: 400px;
+    height: 350px;
+}
+
+.cardContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.image{
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.person{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px;
+}
+
+.pictureName{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.pictureNameRetangular{
+    margin-left: 40px;
+}
+
+.text-content{
+    margin-left: 20px;
+}
+
+.text-content h5{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.text-content p{
+    font-size: 0.9rem;
+    color: grey;
+}
+.conhecaClass{
+    height: 60vh;
+}
+.conheca-logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cardLogos{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    gap: 25px;
+    justify-content: center;
+    box-shadow: 0px 2px 6px 0px rgb(0, 0, 0, 0.4);
+    border-radius: 15px;
+    width: 350px;
+    height: 280px;
+}
+
+.cardLogos img{
+    width: 130px;
+}
+
+.cardLogos p{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+    color: rgb(76, 76, 76);
+}
+
+.title{
+    padding-top: 50px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.title h2{
+    font-size: 2.5rem;
+
+}
+
+
+.fotos-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    height: 40vh;
+}
+
+.fotos-academia h2{
+    padding-bottom: 30px;
+    font-size: 2.5rem;
+    text-align: center;
+    color: rgb(76, 76, 76);;
+}
+
+.foto-academia img{
+    width: 400px;
+}
+
+.contato{
+   height: 80vh;
+}
+
+
+.contato .container-contato .text-content h2{
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(76, 76, 76);
+}
+
+.contato .container-contato .text-content label{
+    color: rgb(76, 76, 76);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.contato form .row{
+    display: flex;
+    margin-bottom: 20px;
+    height: 100%;
+
+}
+
+.contato form .row .input-field{ 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0px 30px 0px 30px;
+}
+
+.contato form .row .input-field input{ 
+    padding: 5px;
+    border-radius: 4px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.contato form .row .input-field label{ 
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.contato form .row .input-field textarea{ 
+    padding: 5px;
+    border-radius: 4px;
+    width: 100%;
+    resize: none;
+    border: 1px solid black;
+}
+
+.buttonForm button{
+    font-size: 1.2rem;
+    padding: 15px;
+    border-radius: 6px;
+    background-color: blue;
+    color: white;
+    border: none;
+}
+
+.footer-container{
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: black;
+    width: 100%;
+}
+
+.links-Footer{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+}
+
+.links-Footer h4{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.links-Footer a{
+    font-size:1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+    cursor: pointer;
+    
+}
+
+.footer-container img{
+    margin-top: 60px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact ul li{
+    color: white;
+    margin-top: 15px;
+}
+
+.contact h4{
+    color: white;
+    font-size: 2rem;
+    margin-top: 60px;
+}
+
+.li-footer li i{
+   color: #b90000;   
+   margin-right: 10px;   
+}
+
+.incon-footer a i{
+    margin-right: 10px;
+    width: 25px;
+    margin-top: 10px;
+}
+
+.incon-footer a {
+    text-decoration: none;
+}
+
+.links-Footer a{
+    transition: 0.5s;
+}
+
+.links-Footer a:hover{
+    color: #e44a4a;
+}
