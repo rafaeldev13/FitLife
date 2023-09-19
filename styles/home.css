@@ -6,9 +6,14 @@
 }
 
 .links{
-    background-color: #b90000;
+    background-color:var(--primary-color);
     display: flex;
     justify-content: space-between;
+    height: 105px;
+}
+
+.menu{
+    display: none;
 }
 
 .buttons{
@@ -30,7 +35,7 @@
 }
 
 .buttons li a:hover{
-    color: #e44a4a;
+    color: var(--primary-color);
 }
 
 nav img{
@@ -40,7 +45,7 @@ nav img{
 nav ul li button{
     width: 150px;
     background-color: white;
-    color: #b90000;
+    color: var(--primary-color);
     border-radius: 999px;
     border: none;
     font-size: 18px;
@@ -67,8 +72,6 @@ nav ul li button:hover{
 .text-content{
     color: white;
     text-align: center;
-
-
 }
 
 .hero .text-content h1{
@@ -83,7 +86,7 @@ nav ul li button:hover{
 
 .hero .text-content button{
     width: 150px;
-    background-color: #b90000;
+    background-color: var(--primary-color);
     color:white;
     border-radius: 999px;
     border: none;
@@ -100,6 +103,10 @@ nav ul li button:hover{
     color:red;
 }
 
+#beneficios{
+    align-items: center;
+    text-align: center;
+}
 
 #beneficios h2{
     margin-top: 20px;
@@ -118,6 +125,10 @@ nav ul li button:hover{
     justify-content: space-between;
     width: 90%;
     margin-top: 40px;
+}
+
+.reverse{
+    flex-direction: row-reverse;
 }
 
 .item-text{
@@ -143,7 +154,7 @@ nav ul li button:hover{
 }
 
 .itemPhoto{
-    margin-left: 50px;
+    justify-content: left;
 }
 
 .clients{
@@ -184,7 +195,7 @@ nav ul li button:hover{
     margin-top: 1rem;
     margin-bottom: 1.5rem;
     margin-left: 1rem;
-    color: #b90000;
+    color: var(--primary-color);
     font-weight: bolder;
 
 }
@@ -197,7 +208,7 @@ nav ul li button:hover{
 }
 
 .text-content p{
-    color: #b90000;
+    color: var(--primary-color);
 }
 
 .card q{
@@ -271,21 +282,17 @@ nav ul li button:hover{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-bottom: 30px;
+    padding-bottom: 30px;.item-text{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        margin-right: 50px;
+            
+    }
 }
-
-.pictureNameRetangular{
-    margin-left: 40px;
-}
-
-.text-content{
-    margin-left: 20px;
-}
-
 .text-content h5{
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: black;
+    color: grey;
 }
 
 .text-content p{
@@ -294,6 +301,7 @@ nav ul li button:hover{
 }
 .conhecaClass{
     height: 60vh;
+
 }
 .conheca-logos{
     display: flex;
@@ -343,10 +351,19 @@ nav ul li button:hover{
 .fotos-container{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     gap: 10px;
-    height: 40vh;
 }
+
+.title-fotos{
+    margin: 0px 0px 50px 0px;
+    text-align: center;
+}
+
+.fotos-academia{
+    padding-bottom: 20px ;
+}
+
 
 .fotos-academia h2{
     padding-bottom: 30px;
@@ -356,11 +373,13 @@ nav ul li button:hover{
 }
 
 .foto-academia img{
-    width: 400px;
+    height: auto;
+    width: auto;
 }
 
 .contato{
    height: 80vh;
+   padding-top: 20px;
 }
 
 
@@ -386,14 +405,15 @@ form{
     display: flex;
     margin-bottom: 20px;
     height: 100%;
+    gap: 20px;
 
 }
 
 .contato form .row .input-field{ 
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin: 0px 30px 0px 30px;
+    margin-bottom: 20px;
+    
 }
 
 .contato form .row .input-field input{ 
@@ -498,4 +518,225 @@ form{
 
 .links-Footer a:hover{
     color: #e44a4a;
+}
+
+
+@media screen and (max-width: 992px){
+
+    .links ul{
+        display: none;
+    }
+
+    .hero .text-content h1{
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+
+    .hero .text-content h3{
+        font-size: 2rem;
+    }
+    #beneficios .item{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #beneficios .item .itemPhoto{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item-text{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .item-text h3{
+        font-size: 1.5rem;
+    }
+
+    .itemPhoto{
+        margin-left: 0px;
+    }
+
+    .imgItem{
+        width: 60%;
+        aspect-ratio: 10/10;
+        overflow: hidden;
+    }
+
+    .menu{
+        font-size: 2.5rem;
+        display: flex;
+        align-items: center;
+        margin-right: 30px ;
+        color: white;
+        cursor: pointer;
+    }
+
+    
+    .text{
+        line-height: 0.1rem;
+        text-align: center;
+}
+    
+    .clients .text h2{
+        font-size: 1.5rem;
+        margin-top: 2.0rem;
+        margin-bottom: 2rem;
+        font-weight: bold;
+        line-height: 1.2;
+    }
+    
+    .clients .text p{
+        font-size: 1rem;
+        margin-top: 1.5rem;
+        margin-bottom: 2.2rem;
+    }
+    
+    .card h3{
+        font-size: 1.7rem;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+        margin-left: 1rem;
+        color: var(--primary-color);
+        font-weight: bolder;
+    
+    }
+    
+    .text-content p{
+        color: var(--primary-color);
+    }
+
+    
+    .containerCards{
+        flex-direction: column;
+        padding: 0px;
+        width: 70%;
+    }
+    
+    
+    .right{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 0px;
+    }
+    
+    .left{
+        justify-content: center;
+        align-items: center;
+        margin-right: 0px;
+        width: 100%;
+    }
+    
+    .vertical{
+        width: 100%;
+        height: auto;
+    }
+
+    .vertical h3{
+        padding-top: 10px;
+    }
+    .horizontal{
+        width: 100%;
+        height: auto;
+    }
+
+    .horizontal h3{
+        padding-top: 10px;
+    }
+    .retangular{
+        width: 100%;
+        height: auto;
+    }
+
+    .retangular h3{
+        padding-top: 10px;
+    }
+    
+    .text-content p{
+        font-size: 0.9rem;
+        color: grey;
+    }
+
+    .conheca{
+        min-width: 80vh;
+    }
+
+    .conheca-logos{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .cardLogos p{
+        font-size: 1.2rem;
+        
+    }
+
+    .cardLogos{
+        width: 70%;
+    }
+
+    .fotos-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .foto-academia img{
+        width: 40vh;
+    }
+
+    .fotos-academia{
+        margin-top: 570px;
+    }
+
+    form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+
+    }
+    .contato form .row{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    
+    }
+
+    .contato{
+        height: 100vh;
+        width: 100%;
+     }
+
+     .container-contato{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     }
+     .contato form .row .input-field textarea{ 
+        width: 35vh;
+    }
+
+    .contato form .row .input-field input{ 
+        width: 35vh;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        height: 90vh;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;      
+    }
+
+    .incon-footer{
+        padding-top: 15px;
+    }
 }
