@@ -745,6 +745,7 @@ form{
     }
 
     aside{
+        translate: -280px;
         height: 90vh;
         position: fixed;
         top: 10vh;
@@ -780,7 +781,7 @@ form{
     } 
 
     .background{
-        display: flex;
+        display: none;
         width: 100vw;
         height: 100vh;
         position: fixed;
