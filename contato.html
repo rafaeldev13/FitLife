@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/contatoForm.css">
+    <link href="./fontawesome-free-6.4.2-web/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/home.css">
+    <script defer src="./script/headerInteration.js"></script>
+    <script defer src="./script/forms.js"></script>
+    <title>Contact</title>
+</head>
+<body>
+    <header class="header-container">
+        <nav class="links">
+            <img  src="./assets/logo.png" alt="">
+            <ul class="buttons">
+                <li><a href="/index.html#hero">Home</a></li>
+                <li><a href="/index.html#beneficios">Benefits</a> </li>
+                <li><a href="/index.html#testimonial">Clients</a> </li>
+                <li> <a href="/index.html#conheca">About us</a> </li>
+                <li> <a href="#contato">Contact us</a></li>
+                <li><button>Log in</button></li>
+            </ul>
+            <div class="menu">&#9776</div>
+        </nav>
+    </header>
+    <main>
+        <div class="background"></div>
+        <aside>
+            <ul>
+                <li><a href="/index.html#hero">Home</a></li>
+                <li><a href="/index.html#beneficios">Benefits</a> </li>
+                <li><a href="/index.html#testimonial">Clients</a> </li>
+                <li><a href="/index.html#conheca">About us</a> </li>
+                <li><a href="/index.html#contato">Contact us</a></li>
+                <li class="buttonSideBar"><a href="#">Log in</a></li>
+            </ul>
+        </aside>
+        <section id="request" class="request ">
+            <div class="container contactUs">
+                <h1>We want to hear from you!</h1>
+                <h3>Send us your questions or see our location below</h3>
+            </div>
+        </section>
+        <section id="contato" class="contato">
+            <div class="container-contato">
+                <div class="text-content">
+                    <h2>Contact us</h2>
+                </div>
+                <form id="form" action="">
+                    <div class="row"> 
+                        <div class="input-field">
+                            <label for="name">Name:</label>
+                            <input 
+                            class="required" 
+                            placeholder="Name" 
+                            id="name" 
+                            name="name" 
+                            type="text" 
+                            oninput="nameValidade()"> 
+                            <span id="name-error" class="error" >*Field Required</span>   
+                        </div>
+                        <div class="input-field">
+                            <label for="LastName">Last Name:</label>
+                            <input 
+                            class="required" 
+                            placeholder="Last name" 
+                            id="lastName" 
+                            type="text" 
+                            name="lasteName"
+                            oninput="validateLastName()"
+                            >
+                            <span id="lastName-error" class="error" >*Field Required</span>       
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field">
+                            <label  for="Phone">Phone:</label>
+                            <input 
+                            class="required" 
+                            placeholder="Phone" 
+                            maxlength="10"
+                            id="phone"
+                            type="tel"  
+                            type="text"
+                            oninput="validatephone()"
+                            >
+                            <span id="phone-error" class="error" >*Field Required</span>   
+                        </div>
+                        <div class="input-field">
+                            <label for="Email">Email:</label>
+                            <input 
+                            class="required"
+                            placeholder="Email"
+                            id="email" 
+                            type="email" 
+                            oninput="validateEmail()"
+                            >                            
+                            <span id="email-error" class="error" >*Field Required</span>       
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field">
+                            <label for="Message">Write your Message:</label>
+                            <textarea placeholder="Write your Message" maxlength="200" name="message" id="message" cols="51" rows="10" ></textarea>
+                            <span id="textArea-error" class="error" ></span>   
+                        </div>
+                    </div>
+                    <div class="buttonForm">
+                        <button id="submitButton" type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div>
+                <img src="./assets/logo.png" alt="">
+            </div>
+            <div class="links-Footer">
+                <h4>Links</h4>
+                <a href="#hero">Home</a>
+                <a href="#beneficios">Benefits</a>
+                <a href="#conheca">About us</a>
+                <a href="#testimonial">Clients</a>
+                <a href="#">Log in</a>
+            </div>
+            <div class="contact">
+                <h4>Contact us</h4>
+                <ul class="li-footer">
+                    <li> <i class="fa-solid fa-envelope"></i>contato@fitlife.com</li>
+                    <li> <i class="fa-solid fa-phone"></i> 226-885-8952</li>
+                    <li> <i class="fa-sharp fa-solid fa-location-dot"></i> London-ON</li>
+                </ul>
+                <div class="incon-footer">
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-instagram" style="color: #ba1212;"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-twitter" style="color: #e90c0c;"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-youtube" style="color: #e90707;"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-facebook" style="color: #dd0808;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -108,14 +108,17 @@ nav ul li button:hover{
 }
 
 #beneficios{
+    display: flex;
     align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
 #beneficios h2{
     margin-top: 20px;
     margin-bottom: 15px;
-    font-size: 30px;
+    font-size: 3rem;
+    color: #4c4c4c;
 }
 .imgItem{
     width: 80%;
@@ -145,7 +148,7 @@ nav ul li button:hover{
 }
 
 .item-text h3{
-    font-size: 15px;
+    font-size: 3rem;
     margin-bottom: 30px;
     margin-top: 50px;
     color: #e44a4a;
@@ -153,7 +156,7 @@ nav ul li button:hover{
 }
 
 .item-text p{
-    line-height: 1.5;
+    line-height: 2rem;
     text-align: justify;
 }
 
@@ -382,8 +385,9 @@ nav ul li button:hover{
 }
 
 .contato{
-   height: 80vh;
-   padding-top: 20px;
+   height: 90vh;
+   padding-top: 60px;
+   margin-bottom: 60px;
 }
 
 
@@ -405,6 +409,7 @@ form{
     margin-top: 80px;
 }
 
+
 .contato form .row{
     display: flex;
     margin-bottom: 20px;
@@ -424,7 +429,6 @@ form{
     padding: 5px;
     border-radius: 4px;
     width: 100%;
-    border: 1px solid black;
 }
 
 .contato form .row .input-field label{ 
@@ -437,7 +441,11 @@ form{
     border-radius: 4px;
     width: 100%;
     resize: none;
-    border: 1px solid black;
+}
+
+
+.input-field span{
+    display: none;
 }
 
 .buttonForm button{
@@ -449,6 +457,10 @@ form{
     border: none;
 }
 
+.error{
+    color: var(--primary-color);
+    padding-top: 8px;
+}
 .footer-container{
     height: 40vh;
     display: flex;
@@ -716,6 +728,7 @@ form{
     .contato{
         height: 100vh;
         width: 100%;
+        margin-bottom: 120px;
      }
 
      .container-contato{

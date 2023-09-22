@@ -1,0 +1,30 @@
+
+.request{
+    padding-top: 40px;
+    text-align: center;
+    color: #4c4c4c;
+}
+
+.request h1 {
+   font-size: 3rem; 
+}
+
+.request h3 {
+    font-size: 1.6rem; 
+    margin-top: 40px;
+    font-weight: bold;
+    width: 50%;
+}
+
+
+@media screen and (max-width: 1190px){
+
+    .request h1 {
+        font-size: 2.3rem; 
+     }    
+
+    .request h3 {
+        font-size: 1.4rem; 
+        width: 90%;
+    }
+}
