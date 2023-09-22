@@ -386,8 +386,8 @@ nav ul li button:hover{
 
 .contato{
    height: 90vh;
-   padding-top: 60px;
-   margin-bottom: 60px;
+   padding-top: 10px;
+   margin-bottom: 10px;
 }
 
 
@@ -726,7 +726,7 @@ form{
     }
 
     .contato{
-        height: 100vh;
+        height: 85vh;
         width: 100%;
         margin-bottom: 120px;
      }

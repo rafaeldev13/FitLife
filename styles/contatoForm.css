@@ -16,6 +16,12 @@
     width: 50%;
 }
 
+#contato{
+    height: 70vh;
+    margin-bottom: 70px;
+
+}
+
 
 @media screen and (max-width: 1190px){
 
@@ -27,4 +33,32 @@
         font-size: 1.4rem; 
         width: 90%;
     }
+
+    #contato{
+        margin-bottom: 180px;
+
+    }
+}
+
+#map{
+    height: 180px; 
+}
+
+.addres-map{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.addres-map h2{
+    font-size: 2.5rem;
+    padding-bottom: 20px; 
+    color: #4c4c4c;
+}
+
+.addres-map #map{
+    height: 50vh;
+    width: 60vw;
 }
